@@ -141,9 +141,9 @@ $(document).ready(function () {
 in one object 
 */
 let filter_global = {};
-    filter_global = Object.keys(myAmenities);
-    filter_global = Object.keys(myCities );
-    filter_global = Object.keys(myState);
+    filter_global['amenities'] = Object.keys(myAmenities);
+    filter_global['cities'] = Object.keys(myCities );
+    filter_global['states'] = Object.keys(myState);
   /**
    * Task 5:
    * When the BUTTON tag is clicked, a new POST request to places_search should be made with the list of Amenities checked
